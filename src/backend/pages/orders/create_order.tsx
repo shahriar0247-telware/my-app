@@ -17,7 +17,7 @@ const RadioButton = ({ options, selectedOption, onSelect }) => {
             {options.map((item) => {
                 return (
                     <div
-                        onPress={() => {
+                        onClick={() => {
                             onSelect(item.key);
                         }}
                         key={item.key} style={[styles.buttonContainer,]}
@@ -144,7 +144,7 @@ export default function Create_order() {
                 }
             </div>
             <div>
-                <OC_Button onPress={() => { navigate("Create order available numbers"); }}>Next</OC_Button>
+                <OC_Button onClick={() => { navigate("Create order available numbers"); }}>Next</OC_Button>
             </div>
         </div>
     )

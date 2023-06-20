@@ -85,7 +85,7 @@ const Accordion = (heading_text) => {
         <div style={styles.container}>
             <div
                 style={[styles.header, expanded && styles.header_selected]}
-                onPress={() => setExpanded(!expanded)}
+                onClick={() => setExpanded(!expanded)}
             >
 
                 <OC_Text style={[styles.headerText, expanded && styles.headerText_selected]}>{heading_text}</OC_Text>
@@ -121,7 +121,7 @@ export default function Create_order_available_numbers() {
                 </div>
             </div>
             <div>
-                <OC_Button onPress={() => { navigate("Create order place order"); }}>Next</OC_Button>
+                <OC_Button onClick={() => { navigate("Create order place order"); }}>Next</OC_Button>
             </div>
         </div>
     )

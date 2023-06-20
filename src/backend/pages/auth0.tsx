@@ -30,7 +30,7 @@ const Home = () => {
             {error && <Text>{error.message}</Text>}
 
             <Button
-                onPress={loggedIn ? onLogout : onLogin}
+                onClick={loggedIn ? onLogout : onLogin}
                 title={loggedIn ? 'Log Out' : 'Log In'}
             />
         </div>

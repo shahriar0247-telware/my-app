@@ -103,7 +103,7 @@ export default function Create_order_place_order() {
                 </div>
             </div>
 
-            <OC_Button onPress={() => { navigate("Order details"); }}>Place Order</OC_Button>
+            <OC_Button onClick={() => { navigate("Order details"); }}>Place Order</OC_Button>
         </div>
     )
 }

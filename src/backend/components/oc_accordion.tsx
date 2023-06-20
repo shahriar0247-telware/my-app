@@ -18,7 +18,7 @@ export default function OC_Accordion({ heading_text, Content }) {
         <div style={styles.container}>
             <div
                 style={[styles.header, expanded && styles.header_selected]}
-                onPress={() => setExpanded(!expanded)}
+                onClick={() => setExpanded(!expanded)}
             >
 
                 <OC_Text style={[styles.headerText, expanded && styles.headerText_selected]}>{heading_text}</OC_Text>

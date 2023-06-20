@@ -3,7 +3,7 @@ import { StyleSheet, Text, div, View, Animated } from "react-native";
 import { colors } from "../../styles/globals/colors";
 import OC_Text from "./oc_text";
 
-function OC_Button({ onPress, children }) {
+function OC_Button({ onClick, children }) {
   const opacityValue = useRef(new Animated.Value(1)).current;
   const [buttonState, setButtonState] = useState("normal");
 
@@ -35,9 +35,9 @@ function OC_Button({ onPress, children }) {
     >
       <div
         style={styles.touchable}
-        onPressIn={handlePressIn}
-        onPressOut={handlePressOut}
-        onPress={onPress}
+        onClickIn={handlePressIn}
+        onClickOut={handlePressOut}
+        onClick={onClick}
         activeOpacity={1}
       >
         <OC_Text style={styles.buttonText}>{children}</OC_Text>

@@ -27,7 +27,7 @@ export default function Top_datatable_options({ selected = "all" }) {
 				</div>
 			</div>
 			<div style={styles.right_section}>
-			<OC_Button onPress={() => {navigate("Create order")}}>Create Order</OC_Button>
+			<OC_Button onClick={() => {navigate("Create order")}}>Create Order</OC_Button>
 			</div>
 		</div>
 	);
